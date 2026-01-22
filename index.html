@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Job Application Tracker</h1>
+    <p>Track and manage your job applications efficiently</p>
+</header>
+
+<main class="container">
+
+    <!-- Add Job -->
+    <section class="form-section">
+        <h2>Add Application</h2>
+        <form id="job-form">
+            <input id="company" placeholder="Company Name" required>
+            <input id="role" placeholder="Job Role" required>
+            <select id="status">
+                <option>Applied</option>
+                <option>Interview</option>
+                <option>Rejected</option>
+            </select>
+            <button>Add</button>
+        </form>
+    </section>
+
+    <!-- Filters -->
+    <section class="filter-section">
+        <input id="search" placeholder="Search by company or role">
+        <select id="filter">
+            <option value="All">All Status</option>
+            <option>Applied</option>
+            <option>Interview</option>
+            <option>Rejected</option>
+        </select>
+        <button onclick="exportCSV()">Export CSV</button>
+    </section>
+
+    <!-- Table -->
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="job-list"></tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
