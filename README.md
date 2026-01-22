@@ -66,8 +66,38 @@ You can see the language breakdown of this repository in GitHub statistics:
 
 To test and run this project on your machine:
 
-1. Clone this repository:
-```bash
-git clone https://github.com/EERLA-VENKATESH/Job-Application-Tracker.git 
+1. Clone this repository: git clone https://github.com/EERLA-VENKATESH/Job-Application-Tracker.git 
+
+2. Navigate to the project directory:
+  cd Job-Application-Tracker
+3. Open the application in your browser:
+
+  Double-click index.html, or
+  Use a local server:
+
+  npx live-server
+
+🔮 Future Enhancements
+
+Here are some ideas you can add later:
+
+Integrate backend API and database storage so applications persist across sessions
+
+Add filters and sort options (e.g., by status or date)
+
+Enable reminders for follow-ups or interviews
+
+Add analytics dashboard to show stats like total applied, interviews, offers, etc.
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+👨‍💻 Author
+
+Eerla Venkatesh
+Frontend Developer & Job Seeker Tools Creator
+GitHub: https://github.com/EERLA-VENKATESH
 
 
+---
